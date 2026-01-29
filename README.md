@@ -2,6 +2,8 @@
 
 A tool for subsampling paired-end FASTQ files to meet file size constraints. Useful for uploading sequencing data to platforms with file size limits.
 
+An interactive version is available at [DrDx.Me](http://www.drdx.me/).
+
 ## Features
 
 - **Automatic subsampling** - Reduces FASTQ files to meet specified size limits while maintaining paired-end integrity
