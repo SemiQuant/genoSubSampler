@@ -115,7 +115,7 @@ check_dependencies() {
 count_reads() {
     local file="$1"
     if [[ "$file" == *.gz ]]; then
-        zcat "$file" | wc -l | awk '{print int($1/4)}'
+        gzip -dc "$file" | wc -l | awk '{print int($1/4)}'
     else
         wc -l < "$file" | awk '{print int($1/4)}'
     fi
